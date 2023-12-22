@@ -3,7 +3,7 @@ let newArr = []
 function duplicates(arr){
   for(let i = 0; i< arr.length; i++){
      if(!newArr.includes(arr[i])){
-       newArr.push(arr[i]) //newArr+=arr[i] 
+       newArr.push(arr[i]) //newArr+=arr[i],	
      }
   }
   return newArr;
