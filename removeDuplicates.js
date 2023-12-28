@@ -8,4 +8,4 @@ function duplicates(arr){
   }
   return newArr;
 }
-console.log(duplicates([1,1,23,48,8,8,8,9]))
+console.log(duplicates([1,1,2,2,3,48,8,8,8,9]))
