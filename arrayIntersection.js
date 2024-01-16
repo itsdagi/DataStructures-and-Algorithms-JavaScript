@@ -1,17 +1,13 @@
-function arrIntersection(arr1, arr2){
-
-  let newArr = []
-  if(arr1.length !== arr2.length){
-      return newArr;
+function arrayIntersection(arr1, arr2){
+ let newArr = [];
+ 
+  for(let i = 0; i < arr1.length; i++){
+     if(arr2.includes(arr1[i])){
+       newArr.push(arr1[i]);
+     }
   }
-  for( let i = 0; i < arr1.length; i++){
-      if(arr1[i] === arr2[i]){
-          newArr.push(arr1[i])
-      }
-  }
-  return newArr;
+  return newArr
 }
-
-console.log(arrIntersection([1,7,3,4],[1,2,3,4]))
+console.log(arrayIntersection([1,2,3,4,5,7], [1,2,3,4,5,6]))
 
 // array intersection 
